@@ -1,0 +1,109 @@
+--Q1
+In Tableau, an area chart is a combination of a line chart and an area chart using the dual-axis technique. It represents any quantitative data over various periods of time. The area between the line and axis is generally filled with color. To create an area chart in Tableau, follow these steps:
+
+i)Open Tableau and connect to the Sample, navigate to a new worksheet.
+ii)From the Data pane, drag Order Date to the Columns shelf.
+iii)On the Columns shelf, right-click YEAR (Order Date) and select Month.
+iv)From the Data pane, drag Quantity to the Rows shelf.
+v)From the Data pane, drag Ship Mode to Color on the Marks card.
+vi)On the Marks card, click the Mark Type drop-down and select Area.
+
+A line chart is used to display trends over time or other continuous data. To create a line chart in Tableau:
+
+i)Drag the Order Date dimension to Columns.
+ii)Tableau aggregates the date by year and creates column headers.
+iii)Drag the Sales measure to Rows.
+iv)Tableau aggregates Sales as SUM and displays a simple line chart.
+
+--Q2
+There are multiple ways to create a group. You can create a group from a field in the Data pane, or by selecting data in the view and then clicking the group icon.
+i)The first step in grouping fields and combining tables in Tableau is to create a primary table. This table should contain all of the fields that you want to use in your analysis. 
+ii)Now you can group fields together by selecting the fields that you want to group and then right-clicking and selecting “Group” from the context menu.
+iii)Once you have grouped fields together, you can combine tables. To combine the fields, select multiple dimensions in the Data pane and then right-click (control-click on a Mac) the fields and select Create > Combined Field. You can also create a custom view in Tableau by dragging and dropping fields into the view.
+
+--Q3
+The Color, Size, and Shape Marks Cards all allow you to encode the marks on a view. Encoding marks adds depth to an analysis by mapping marks to colors, sizes, and/or shapes to add context to a view.
+E.g.- you can use color to represent different categories of data or to highlight specific data points. You can use size to represent the magnitude of a measure or to differentiate between different dimensions.
+
+--Q4
+Tableau supports different types of joins to combine data from multiple tables. The types of joins supported by Tableau are:
+
+i)Inner Join
+An inner join returns only the rows that have matching values in both tables being joined.
+ii)Left Join
+A left join returns all the rows from the left table and matching rows from the right table.
+iii)Right Join
+A right join returns all the rows from the right table and matching rows from the left table.
+iv)Full Outer Join
+A full outer join returns all rows from both tables and fills in NULL values for missing matches.
+
+--Q5
+The steps to create a dashboard in Tableau are:
+
+i)Open a dashboard sheet by selecting Dashboard from the menu and then New Dashboard.
+ii)Add views to your dashboard by dragging sheets onto the dashboard.
+iii)Arrange your views by dragging them around the dashboard.
+iv)Add text objects to your dashboard by dragging them onto the dashboard.
+
+--Q6
+Heat maps and scatter plots are two types of data visualization techniques used to represent data in a graphical format. Heat maps are used to represent data in a two-dimensional format where values are represented by colors whereas Scatter plots are used to represent data in a two-dimensional format where each point represents an observation.
+
+To draw a heat map you have to select a minimum of two attributes( one in the row and one in the column) by drag and drop then select the chart option as a heat map.
+
+In order to create a scatter plot, we need to select two columns from a data table, one for each dimension of the plot. Each row of the table will become a single dot in the plot with position according to the column values.
+
+--Q7
+To create table calculations in Tableau, follow these steps:
+
+i)Build the visualization by opening Tableau and connecting to the Sample-Superstore saved data source. Navigate to a new worksheet. From the Data pane, under Dimensions, drag Order Date to the Rows shelf. The dimension updates to YEAR (Order Date). On the Rows shelf, right-click YEAR (Order Date) and select Quarter.
+ii)Add the table calculation by right clicking SUM (Sales) on the Marks card and selecting Add Table Calculation. In the Table Calculation dialog box that opens, select Difference From for Calculation Type.
+iii)In the Compute Using list, select Order Date (Quarterly) and click OK.
+iv)To view your table calculation, drag it from the Measures area to Text on the Marks card.
+
+[You can also create a table calculation using the calculation editor by selecting Analysis > Create Calculated Field in Tableau Desktop.]
+
+--Q8
+In Tableau, distribution bands are used to identify a specific region or range on a continuous axis. To create a distribution band in Tableau, follow these steps:
+
+i)Open the Tableau tool and connect a dataset into it.
+ii)Drag and drop the one sheet of the connected dataset.
+iii)Click on sheet1 to open the tableau worksheet.
+iv)On clicking Sheet1 you will get whole dataset attributes on the left side and a worksheet for work.
+v)To draw a graph or chart by selecting attributes (by drag and drop) then apply the concept of distribution band.
+
+--Q9
+Bar Chart:
+
+i)Place a dimension on the Rows shelf and a measure on the Columns shelf or vice versa.
+ii)A bar chart uses the Bar mark type. Tableau selects this mark type when the data view matches one of the two field arrangements shown below.
+iii)You can add additional fields to these shelves.
+
+Pie Diagram:
+
+i)Place a dimension on the Rows shelf and a measure on the Columns shelf or vice versa.
+ii)By default, Tableau displays a bar chart,click on 'Show Me' button in the toolbar and select Pie Chart from 'Show Me' options.
+iii)You can add additional fields to these shelves.
+
+--Q10
+To add story points in Tableau, follow these steps:
+
+i)Click the New Story tab.
+ii)In the lower-left corner of the screen, choose a size for your story.
+iii)By default, your story gets its title from the sheet name.
+iv)To start building your story, double-click a sheet on the left to add it to a story point.
+v)Click 'Add a caption' to summarize the story point.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
